@@ -10,10 +10,12 @@
     <title>Home Page</title>
 </head>
 <style>
-
+    .navbar ul li a:hover {
+        opacity: .7;
+    }
 </style>
 <body>
-    <div class="container-fluid" style="background-color: #f0ece2 ;">
+    <div class="container-fluid" style="background-color: #f0ece2;">
         <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="navbar-images">
@@ -22,12 +24,25 @@
                 <a href="#"><img src="media/title.png" alt="Logo Text" width="150px"></a>
             </div>
 
-            <div class="collapse navbar-collapse" id="nav-content">
+            <div class="navbar-div collapse navbar-collapse" id="nav-content">
                 <ul class="navbar-nav">
-                    <li><a href="#" class="nav-item nav-link"><h4>News</h4></a></li>
-                    <li><a href="#" class="nav-item nav-link"><h4>Games</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link" type="button"><h4>News</h4></a></li>
+                    <div class="dropdown">
+                        <button type="button" id="aboutus" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 24px; padding-top: 4px; font-weight: 500;">Games</button>
+                        <ul class="dropdown-menu w" aria-labelledby="games">
+                            <li><a href="#" class="dropdown-item">Dota 2</a></li>
+                            <li><a href="#" class="dropdown-item">League of Legends</a></li>
+                            <li><a href="#" class="dropdown-item">Valorant</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#" class="nav-item nav-link"><h4>Tournaments</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link"><h4>Support</h4></a></li>
                     <li><a href="#" class="nav-item nav-link"><h4>About Us</h4></a></li>
                     <li><a href="#" class="nav-item nav-link"><h4>Contact Us</h4></a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li><a href="#" class="nav-item nav-link"><h4>Login</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link"><h4>Sign Up</h4></a></li>
                 </ul>
             </div>
             <form action="#" class="d-flex">

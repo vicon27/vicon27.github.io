@@ -10,20 +10,32 @@
     <title>Home Page</title>
 </head>
 <style>
-    .nav {
-        background-color: #f0ece2;
-    }
-
 
 </style>
 <body>
-    <div class="nav container-fluid">
-        <nav>
-            <div class="navbar image">
-                <img src="media/logo.png" alt="Logo" width="100px">
-                <img src="media/line.png" alt="" width="10px">
-                <img src="media/title.png" alt="" width="150px" style="margin: 0px;">
+    <div class="container-fluid" style="background-color: #f0ece2 ;">
+        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="navbar-images">
+                <a href="#"><img src="media/logo.png" alt="Logo" width="100px"></a>
+                <a href="#"><img src="media/line.png" alt="Logo Line" width="10px"></a>
+                <a href="#"><img src="media/title.png" alt="Logo Text" width="150px"></a>
             </div>
+
+            <div class="collapse navbar-collapse" id="nav-content">
+                <ul class="navbar-nav">
+                    <li><a href="#" class="nav-item nav-link"><h4>News</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link"><h4>Games</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link"><h4>About Us</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link"><h4>Contact Us</h4></a></li>
+                </ul>
+            </div>
+            <form action="#" class="d-flex">
+                  <div class="input-group">
+                    <input type="text" name="search" id="search" class="form-control" style="outline: none; border: none;">
+                    <button type="button" class="btn btn-secondary"><i class="bi bi-search"></i></button>
+                  </div>      
+            </form>
         </nav>
     </div>
 

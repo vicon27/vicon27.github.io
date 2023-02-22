@@ -18,13 +18,16 @@
         background-color: transparent;
         color: white;
         font-size: 20px;
-        border: 1px solid white;
+        border: 1px solid #f0ece2;
         border-radius: 5px;
         padding: 10px;
-        margin: ;
+    }
+
+    .container .carousel .dota_button_caption {
+        font-size: 12px;
     }
 </style>
-<body>
+<body class="bg-black">
     <div class="container-fluid" style="background-color: #f0ece2;">
         <nav class="navbar navbar-expand-sm navbar-light sticky-top">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button"><span class="navbar-toggler-icon"></span></button>
@@ -63,7 +66,7 @@
     </div>
 
     <div class="container">
-        <div class="carousel carousel slide" id="carousel" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel carousel slide" id="carousel" data-bs-ride="carousel" data-bs-interval="100000">
             <ol class="carousel-indicators">
                 <li data-bs-target="#carousel" data-bs-slide-to="0" class="active">bilog</li>
                 <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
@@ -71,14 +74,16 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <video preload="auto" loop autoplay muted>
+                    <video preload="auto" loop autoplay>
                         <source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm">
                     </video>
                     <div class="carousel-caption">
-                        <div class="d-flex text-center">
-                            <a href="#"><button class="dota_button">PLAY FOR FREE
-                            <img src="media/steam.png" alt="image" width="40px"></button></a>
-                        </div>
+                        <a href="https://store.steampowered.com/about/"><button class="dota_button">
+                            PLAY FOR FREE
+                        <img src="media/steam.png" alt="image" width="40px">
+                        <br>
+                        <span class="dota_button_caption">Download on Steam</span> 
+                        </button></a>
                     </div>
                 </div>
                 <div class="carousel-item">

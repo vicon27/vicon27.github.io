@@ -21,15 +21,56 @@
         border: 1px solid #f0ece2;
         border-radius: 5px;
         padding: 10px;
+        opacity: 0.8;
     }
 
     .container .carousel .dota_button_caption {
         font-size: 12px;
     }
+
+    .container .carousel .dota_button:hover {
+        box-shadow: 1px 1px 10px 2px black;
+        opacity: 1;
+    }
+
+    .container .carousel .lol_button {
+        background-color: rgb(11, 198, 227);
+        color: black;
+        font-size: 17px;
+        border: 1px solid #f0ece2;
+        border-radius: 5px;
+        padding: 20px 50px 20px 50px;
+        opacity: 0.8;
+    }
+
+    .container .carousel .lol_button:hover {
+        background-color: rgb(35, 226, 255);
+    }
+
+    .container .carousel .valo_button {
+        transition: all .5s ease;
+        color: #fff;
+        border: 1px solid white;
+        font-family:'Montserrat', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
+        font-size: 17px;
+        background-color : transparent;
+        padding: 20px 50px 20px 50px;
+        outline: none;
+        border-radius: 4px;
+    }
+
+    .container .carousel .valo_button:hover {
+        color: white;
+        background-color: red;
+        border: 1px solid red;
+    } 
 </style>
 <body class="bg-black">
     <div class="container-fluid" style="background-color: #f0ece2;">
-        <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-expand-md navbar-light sticky-top">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="navbar-images">
                 <a href="#"><img src="media/logo.png" alt="Logo" width="100px"></a>
@@ -39,7 +80,6 @@
 
             <div class="navbar-div collapse navbar-collapse" id="nav-content">
                 <ul class="navbar-nav">
-                    <li><a href="#" class="nav-item nav-link" type="button"><h4>News</h4></a></li>
                     <div class="dropdown">
                         <button type="button" id="aboutus" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 24px; padding-top: 4px; font-weight: 500;">Games</button>
                         <ul class="dropdown-menu w" aria-labelledby="games">
@@ -63,6 +103,7 @@
                   </div>      
             </form>
         </nav>
+        
     </div>
 
     <div class="container">
@@ -74,7 +115,7 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <video preload="auto" loop autoplay>
+                    <video preload="auto" loop autoplay muted>
                         <source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm">
                     </video>
                     <div class="carousel-caption">
@@ -91,8 +132,9 @@
                     <source type="video/mp4" src="media/lol.mp4">
                 </video>
                 <div class="carousel-caption">
-                    <h3>Title</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                    <a href="https://signup.leagueoflegends.com/en-ph/signup/index?_gl=1*4dpb6j*_ga*MTc3OTc4MjcxMi4xNjc2NTM5ODE1*_ga_FXBJE5DEDD*MTY3NzE2MzcyMS4xMC4wLjE2NzcxNjM3MjEuNjAuMC4w&_ga=2.33076150.96742921.1677057330-1779782712.1676539815#/"><button class="lol_button">
+                        PLAY FOR FREE
+                    </button></a>
                 </div>
                 </div>
                 <div class="carousel-item">
@@ -100,8 +142,9 @@
                         <source type="video/mp4" src="media/valorant.mp4">
                     </video>
                     <div class="carousel-caption">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="https://playvalorant.com/en-us/"><button class="valo_button">
+                            PLAY FOR FREE
+                        </button></a>
                     </div>
             </div>
         </div>
@@ -109,10 +152,10 @@
     </div>
 
     <footer class="container-fluid text-center" style="background-color: #f0ece2;">
-        <img src="media/dota logo.png" alt="" width="100px">
+        <img src="media/dota logo.png" alt="" width="100px" style="margin-top: 10px;">
         <img src="media/lol logo.png" alt="" width="100px">
         <img src="media/valorant logo.png" alt="" width="70px">
-        <p style="margin: 0px;">League of Legends logo, Valorant logo and the Dota logo are copyrighted under Valve Corporation and RIOT GAMES.Copyright &copy and all rights reserved.</p>
+        <p style="margin: 0px; font-size: 12px; padding: 10px; padding-top: 0px;">League of Legends logo, Valorant logo and the Dota logo are copyrighted under Valve Corporation and RIOT GAMES. <br> Copyright &copy and all rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

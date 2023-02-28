@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel = "icon" href = "/media/logo.png" type = "image/x-icon">
-    <title>Esports News</title>
+    <title>Cheaters Will Never Be Allowed in Dota</title>
 </head>
 <style>
     @media screen and (max-width: 576px) {
@@ -26,11 +26,24 @@
         .navbar .input-group {
             display: none;
         }
-        video {
-            width: 100vw;
-            height: 70vh;
+        .container .row .title h1 {
+            font-size: 20px;
+        }
+        .container .row .image img{
+            width:95%;
+            height:100%;
+        } 
+
+        .container .row .content p {
+            padding: 10px;
+        }
+
+        .container .row .parag p {
+            margin-bottom: 50px;
+            padding: 0px 12px;
         }
     }
+
     .navbar ul li a {
         background-color: #f0ece2;
         padding: 10px;
@@ -42,62 +55,53 @@
         color: #f0ece2;
     }
 
-    .container .carousel .dota_button {
-        background-color: transparent;
+    .container .back a {
+        text-decoration: none;
+        color: #f0ece2;
+        opacity: 0.7;
+    }
+
+    .container .back p {
+        margin: 0px 0px 0px 0px;
+        color: #f0ece2;
+        opacity: 0.7;
+        transition: 0.1s;
+    }
+
+    .container .back p:hover {
+        opacity: 1;
+        margin-right: 10px;
+        transition: 0.1s;
+    }
+
+    .row .title h1{
+        font-size: 70px;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        margin: 50px 0px 10px 0px;
+    }
+
+    .row .title p {
+        color: #f0ece2;
+        margin: 0px 0px 50px 0px;
+    }
+
+    .row .content {
+        padding: 0px 200px;
         color: white;
         font-size: 20px;
-        font-family:'Montserrat', sans-serif;
-        border: 1px solid #f0ece2;
-        border-radius: 5px;
-        padding: 10px;
-        opacity: 0.8;
     }
 
-    .container .carousel .dota_button_caption {
-        font-size: 12px;
+    .row .image img{
+        width:70%;
+        height:100%;
     }
 
-    .container .carousel .dota_button:hover {
-        box-shadow: 1px 1px 10px 2px black;
-        opacity: 1;
+    .row .parag p {
+        margin-bottom: 50px;
+        padding: 0px 200px;
     }
-
-    .container .carousel .lol_button {
-        background-color: #790a34;
-        color: #f0ece2;
-        font-size: 17px;
-        font-family:'Montserrat', sans-serif;
-        border: 1px solid #f0ece2;
-        border-radius: 5px;
-        padding: 20px 50px 20px 50px;
-        opacity: 0.8;
-    }
-
-    .container .carousel .lol_button:hover {
-        background-color: #c21356;
-        color: black;
-    }
-
-    .container .carousel .valo_button {
-        transition: all .5s ease;
-        color: #f0ece2;
-        border: 1px solid #f0ece2;
-        font-family:'Montserrat', sans-serif;
-        text-transform: uppercase;
-        text-align: center;
-        line-height: 1;
-        font-size: 17px;
-        background-color : transparent;
-        padding: 20px 50px 20px 50px;
-        outline: none;
-        border-radius: 4px;
-    }
-
-    .container .carousel .valo_button:hover {
-        color: black;
-        background-color: #f0ece2;
-        border: 1px solid black;
-    } 
 
     .logo {
         width: 100px;
@@ -112,6 +116,7 @@
     }
 </style>
 <body class="bg-black">
+    <!-- HEADER NAVIGATION BAR -->
     <div class="container-fluid" style="background-color: #f0ece2;">
         <nav class="navbar navbar-expand-sm navbar-expand-md navbar-light sticky-top">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button"><span class="navbar-toggler-icon"></span></button>
@@ -145,50 +150,38 @@
     </div>
 
     <div class="container">
-        <div class="carousel carousel slide" id="carousel" data-bs-ride="carousel" data-bs-interval="100000">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carousel" data-bs-slide-to="0" class="active">bilog</li>
-                <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <video preload="auto" loop autoplay muted>
-                        <source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm">
-                    </video>
-                    <div class="but carousel-caption">
-                        <a href="https://store.steampowered.com/about/"><button class="dota_button">
-                            PLAY FOR FREE
-                        <img src="media/steam.png" alt="image" width="40px">
-                        <br>
-                        <span class="dota_button_caption">Download on Steam</span> 
-                        </button></a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <video preload="auto" loop autoplay muted class="bg-black pt-5 pb-5">
-                    <source type="video/mp4" src="media/lol.mp4">
-                </video>
-                <div class="but carousel-caption">
-                    <a href="https://signup.leagueoflegends.com/en-ph/signup/index?_gl=1*4dpb6j*_ga*MTc3OTc4MjcxMi4xNjc2NTM5ODE1*_ga_FXBJE5DEDD*MTY3NzE2MzcyMS4xMC4wLjE2NzcxNjM3MjEuNjAuMC4w&_ga=2.33076150.96742921.1677057330-1779782712.1676539815#/"><button class="lol_button">
-                        PLAY FOR FREE
-                    </button></a>
-                </div>
-                </div>
-                <div class="carousel-item">
-                    <video preload="auto" loop autoplay muted class="bg-black pt-5 pb-5">
-                        <source type="video/mp4" src="media/valorant.mp4">
-                    </video>
-                    <div class="but carousel-caption">
-                        <a href="https://playvalorant.com/en-us/"><button class="valo_button">
-                            PLAY FOR FREE
-                        </button></a>
-                    </div>
+        <div class="row">
+            <div class="title text-center">
+                <h1>Cheaters Will Never Be Welcome in Dota</h1>
+                <p>FEBRUARY 22, 2023</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image text-center mb-5">
+                <img src="media/dota/1.png" alt="image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container text-white parag">
+                <p>Today, we permanently banned over 40,000 accounts that were using third-party software to cheat in Dota over the last few weeks. This software was able to access information used internally by the Dota client that wasn't visible during normal gameplay, giving the cheater an unfair advantage.</p>
+
+                <p>While fixing the underlying issues that made these cheats possible was a priority, we have also decided to remove these bad actors from the active Dota playerbase.</p>
+
+                <p>With that goal in mind, we released a patch as soon as we understood the method these cheats were using. This patch created a honeypot: a section of data inside the game client that would never be read during normal gameplay, but that could be read by these exploits. Each of the accounts banned today read from this "secret" area in the client, giving us extremely high confidence that every ban was well-deserved.</p>
+
+                <p>The prevalence of this family of cheats means that today's ban wave is particularly large, but it's only the latest action in an ongoing campaign. While the battle against cheaters and cheat developers often takes place in the shadows, we wanted to make this example visible, and use it to make our position clear: If you are running any application that reads data from the Dota client as you're playing games, your account can be permanently banned from playing Dota. This includes professional players, who will be banned from all Valve competitive events.</p>
+
+                <p>Dota is a game best enjoyed when played on an even field, where victories are earned by skill and tenacity. We expect that some players will continue to develop and use new exploits, to continue to try to gain unfair advantages at the expense of other players. As before, we will continue to detect and remove these exploits as they come, and continue to ban users who cheat.
+                </p>
+
+                <p>Lastly, we'd like to thank those who offered their time and energy to help us resolve this — from those who reported a player acting suspiciously in-game, to those who reviewed overwatch cases where this behavior was observed. Thank you for helping to make Dota a better experience for everyone.</p>
             </div>
         </div>
     </div>
-    </div>
 
+    <!-- FOOTER -->
     <footer class="container-fluid text-center" style="background-color: #f0ece2;">
         <img src="media/dota logo.png" alt="" width="100px" style="margin-top: 10px;">
         <img src="media/lol logo.png" alt="" width="100px">

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="icon" href="/media/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <title>Esports News</title>
+    <link rel = "icon" href = "/media/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="news.css">
+    <title>Cheaters Will Never Be Allowed in Dota</title>
 </head>
 <body class="bg-black">
+    <!-- HEADER NAVIGATION BAR -->
     <div class="container-fluid" style="background-color: #f0ece2;">
         <nav class="navbar navbar-expand-sm navbar-expand-md navbar-light sticky-top">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button"><span class="navbar-toggler-icon"></span></button>
@@ -26,8 +27,8 @@
                         <button type="button" id="aboutus" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 24px; padding-top: 4px; font-weight: 500;">Games</button>
                         <ul class="dropdown-menu w" aria-labelledby="games" style="padding: 0px;">
                             <li><a href="dota.html" class="dropdown-item">Dota 2</a></li>
-                            <li><a href="league.html" class="dropdown-item">League of Legends</a></li>
-                            <li><a href="valorant.html" class="dropdown-item">Valorant</a></li>
+                            <li><a href="#" class="dropdown-item">League of Legends</a></li>
+                            <li><a href="#" class="dropdown-item">Valorant</a></li>
                         </ul>
                     </div>
                     <li><a href="support.html" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px;"><h4>Support</h4></a></li>
@@ -44,50 +45,40 @@
     </div>
 
     <div class="container">
-        <div class="carousel carousel slide" id="carousel" data-bs-ride="carousel" data-bs-interval="100000">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carousel" data-bs-slide-to="0" class="active">bilog</li>
-                <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <video preload="auto" loop autoplay muted>
-                        <source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm">
-                    </video>
-                    <div class="but carousel-caption">
-                        <a href="https://store.steampowered.com/about/"><button class="dota_button">
-                            PLAY FOR FREE
-                        <img src="media/steam.png" alt="image" width="40px">
-                        <br>
-                        <span class="dota_button_caption">Download on Steam</span> 
-                        </button></a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <video preload="auto" loop autoplay muted class="bg-black pt-5 pb-5">
-                    <source type="video/mp4" src="media/lol.mp4">
-                </video>
-                <div class="but carousel-caption">
-                    <a href="https://signup.leagueoflegends.com/en-ph/signup/index?_gl=1*4dpb6j*_ga*MTc3OTc4MjcxMi4xNjc2NTM5ODE1*_ga_FXBJE5DEDD*MTY3NzE2MzcyMS4xMC4wLjE2NzcxNjM3MjEuNjAuMC4w&_ga=2.33076150.96742921.1677057330-1779782712.1676539815#/"><button class="lol_button">
-                        PLAY FOR FREE
-                    </button></a>
-                </div>
-                </div>
-                <div class="carousel-item">
-                    <video preload="auto" loop autoplay muted class="bg-black pt-5 pb-5">
-                        <source type="video/mp4" src="media/valorant.mp4">
-                    </video>
-                    <div class="but carousel-caption">
-                        <a href="https://playvalorant.com/en-us/"><button class="valo_button">
-                            PLAY FOR FREE
-                        </button></a>
-                    </div>
+        <div class="row">
+            <div class="title text-center">
+                <h1>The Lima Major Approaches</h1>
+                <p>FEBRUARY 21, 2023</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image text-center mb-5">
+                <img src="media/dota/2.jpg" alt="image">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container text-white parag">
+                <p>The 2023 DPC Winter Tour regional showdowns have nearly concluded, and soon the top 18 teams in the world will converge on Peru to compete in the culminating event of the first tour: The Lima Major, presented by 4D Esports. As the first-ever South American DPC Major, we are excited to share the excitement of live Dota with an eager audience of long-standing fans. </p>
+
+                <p>Dota fans everywhere can catch all the action online as the Group Stage runs February 22 - 26, setting the stage for the Playoffs to follow February 28 - March 5. Dive into all of the tournament teams and standings throughout the event at www.dota2.com/esports.</p>
+
+                <p><strong> Supporters Club Sale </strong><br>
+                    As the Major approaches, show your fan pride and unlock custom equippables by purchasing your favorite team's Supporters Club, now 75% off until the end of the Winter Tour. As always, 50% of every Supporters Club sale goes directly to the team.</p>
+
+                <p><strong>Fantasy & Player Cards </strong> <br>
+                    With the conclusion of the regional leagues and the start of the Major, Fantasy has been adjusted for the different format. As with the previous Majors, Player Card packs now contain only players from Major-qualified teams, and Fantasy will run daily instead of weekly. If you're new to Fantasy or just need a refresher, check out this Fantasy rundown from the start of the Tour.
+                </p>
+
+                <p><strong>Looking Ahead</strong> <br>
+                    Once the Major Champions have been crowned and the Tour comes to a close, we look forward to unveiling our next update on March 6th.
+                </p>
             </div>
         </div>
     </div>
-    </div>
 
+    <!-- FOOTER -->
     <footer class="container-fluid text-center" style="background-color: #f0ece2;">
         <img src="media/dota logo.png" alt="" width="100px" style="margin-top: 10px;">
         <img src="media/lol logo.png" alt="" width="100px">

@@ -1,0 +1,104 @@
+@media screen and (max-width: 576px) {
+    .navbar-images .logo {
+        width: 40px;
+    }
+
+    .navbar-images .logo_line {
+        width: 5px;
+    }
+
+    .navbar-images .logo_text {
+        width: 70px;
+    }
+
+    .navbar .input-group {
+        display: none;
+    }
+    video {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    footer {
+        padding-bottom: 10px;
+    }
+}
+.navbar ul li a {
+    background-color: #f0ece2;
+    padding: 10px;
+    font-family:'Montserrat', sans-serif;
+}
+.navbar ul li a:hover {
+    opacity: .7;
+    background-color: black;
+    color: #f0ece2;
+}
+
+.container .carousel .dota_button {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family:'Montserrat', sans-serif;
+    border: 1px solid #f0ece2;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.container .carousel .dota_button_caption {
+    font-size: 12px;
+}
+
+.container .carousel .dota_button:hover {
+    box-shadow: 1px 1px 10px 2px black;
+    opacity: 1;
+}
+
+.container .carousel .lol_button {
+    background-color: #790a34;
+    color: #f0ece2;
+    font-size: 17px;
+    font-family:'Montserrat', sans-serif;
+    border: 1px solid #f0ece2;
+    border-radius: 5px;
+    padding: 20px 50px 20px 50px;
+    opacity: 0.8;
+}
+
+.container .carousel .lol_button:hover {
+    background-color: #c21356;
+    color: black;
+}
+
+.container .carousel .valo_button {
+    transition: all .5s ease;
+    color: #f0ece2;
+    border: 1px solid #f0ece2;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 20px 50px 20px 50px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.container .carousel .valo_button:hover {
+    color: black;
+    background-color: #f0ece2;
+    border: 1px solid black;
+} 
+
+.logo {
+    width: 100px;
+}
+
+.logo_line {
+    width: 10px;
+}
+
+.logo_text {
+    width: 150px;
+}

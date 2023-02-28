@@ -10,6 +10,12 @@
     <title>Home Page</title>
 </head>
 <style>
+    @media screen and (max-width: 576px) {
+        video {
+            width: 100vw;
+            height: 70vh;
+        }
+    }
     .navbar ul li a {
         background-color: #f0ece2;
         padding: 10px;
@@ -75,7 +81,7 @@
     .container .carousel .valo_button:hover {
         color: black;
         background-color: #f0ece2;
-        border: 1px solid #black;
+        border: 1px solid black;
     } 
 </style>
 <body class="bg-black">
@@ -92,7 +98,7 @@
                 <ul class="navbar-nav">
                     <div class="dropdown">
                         <button type="button" id="aboutus" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 24px; padding-top: 4px; font-weight: 500;">Games</button>
-                        <ul class="dropdown-menu w" aria-labelledby="games" style="padding: 0px; border-radius: 5px;">
+                        <ul class="dropdown-menu w" aria-labelledby="games" style="padding: 0px;">
                             <li><a href="dota.html" class="dropdown-item">Dota 2</a></li>
                             <li><a href="#" class="dropdown-item">League of Legends</a></li>
                             <li><a href="#" class="dropdown-item">Valorant</a></li>
@@ -101,10 +107,6 @@
                     <li><a href="#" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px;"><h4>About Us</h4></a></li>
                     <li><a href="#" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px;"><h4>Contact Us</h4></a></li>
                 </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li><a href="#" class="nav-item nav-link" ><h4>Login</h4></a></li>
-                    <li><a href="#" class="nav-item nav-link"><h4>Sign Up</h4></a></li>
-                </ul>
             </div>
             <form action="#" class="d-flex">
                   <div class="input-group">
@@ -112,8 +114,7 @@
                     <button type="button" class="btn btn-secondary"><i class="bi bi-search"></i></button>
                   </div>      
             </form>
-        </nav>
-        
+        </nav> 
     </div>
 
     <div class="container">
@@ -128,7 +129,7 @@
                     <video preload="auto" loop autoplay muted>
                         <source type="video/mp4" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm">
                     </video>
-                    <div class="carousel-caption">
+                    <div class="but carousel-caption">
                         <a href="https://store.steampowered.com/about/"><button class="dota_button">
                             PLAY FOR FREE
                         <img src="media/steam.png" alt="image" width="40px">
@@ -141,7 +142,7 @@
                 <video preload="auto" loop autoplay muted class="bg-black pt-5 pb-5">
                     <source type="video/mp4" src="media/lol.mp4">
                 </video>
-                <div class="carousel-caption">
+                <div class="but carousel-caption">
                     <a href="https://signup.leagueoflegends.com/en-ph/signup/index?_gl=1*4dpb6j*_ga*MTc3OTc4MjcxMi4xNjc2NTM5ODE1*_ga_FXBJE5DEDD*MTY3NzE2MzcyMS4xMC4wLjE2NzcxNjM3MjEuNjAuMC4w&_ga=2.33076150.96742921.1677057330-1779782712.1676539815#/"><button class="lol_button">
                         PLAY FOR FREE
                     </button></a>
@@ -151,7 +152,7 @@
                     <video preload="auto" loop autoplay muted class="bg-black pt-5 pb-5">
                         <source type="video/mp4" src="media/valorant.mp4">
                     </video>
-                    <div class="carousel-caption">
+                    <div class="but carousel-caption">
                         <a href="https://playvalorant.com/en-us/"><button class="valo_button">
                             PLAY FOR FREE
                         </button></a>

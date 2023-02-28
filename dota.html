@@ -10,18 +10,66 @@
     <title>Home Page</title>
 </head>
 <style>
-    .navbar ul li a:hover {
-      
+    .navbar ul li a {
         background-color: #f0ece2;
-        color: black;
+        padding: 10px;
+        font-family:'Montserrat', sans-serif;
+    }
+    .navbar ul li a:hover {
+        opacity: .7;
+        background-color: black;
+        color: #f0ece2;
     }
 
-    .navbar ul {
+    .con .vid {
+        display: flex;
+    }
+
+    .card .card-img-overlay .card-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 70px;
+        margin: 600px 0px 0px 100px;
+        color: #f0ece2;
+        text-shadow: 4px 4px black;
+    }
+
+    .card .card-img-overlay a {
+        text-decoration: none;
+        color: #f0ece2;
+        opacity: 0.7;
+    }
+
+    .card .card-img-overlay p {
+        margin: 0px 0px 0px 100px;
+        color: #f0ece2;
+        opacity: 0.7;
+        transition: 0.1s;
+    }
+
+    .card .card-img-overlay p:hover {
+        opacity: 1;
+        margin-right: 10px;
+        transition: 0.1s;
+    }
+
+    .row .col-4 .card{
+        width: 400px;
+        height: 300px;
+        margin-bottom: 50px;
         background-color: #f0ece2;
+    }
+
+    .row .col-4 {
+        width: 400px;
+        margin-left: 50px;
+    }
+
+    .row {
+        margin-top: 50px;
     }
 </style>
 <body class="bg-black">
-    <!-- NAVIGATION BAR -->
+    <!-- HEADER NAVIGATION BAR -->
     <div class="container-fluid" style="background-color: #f0ece2;">
         <nav class="navbar navbar-expand-sm navbar-expand-md navbar-light sticky-top">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button"><span class="navbar-toggler-icon"></span></button>
@@ -35,18 +83,14 @@
                 <ul class="navbar-nav">
                     <div class="dropdown">
                         <button type="button" id="aboutus" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 24px; padding-top: 4px; font-weight: 500;">Games</button>
-                        <ul class="dropdown-menu w" aria-labelledby="games">
-                            <li><a href="#" class="dropdown-item">Dota 2</a></li>
+                        <ul class="dropdown-menu w" aria-labelledby="games" style="padding: 0px; border-radius: 5px;">
+                            <li><a href="dota.html" class="dropdown-item">Dota 2</a></li>
                             <li><a href="#" class="dropdown-item">League of Legends</a></li>
                             <li><a href="#" class="dropdown-item">Valorant</a></li>
                         </ul>
                     </div>
-                    <li><a href="#" class="nav-item nav-link" ><h4>About Us</h4></a></li>
-                    <li><a href="#" class="nav-item nav-link" ><h4>Contact Us</h4></a></li>
-                </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li><a href="#" class="nav-item nav-link" ><h4>Login</h4></a></li>
-                    <li><a href="#" class="nav-item nav-link"><h4>Sign Up</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px;"><h4>About Us</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px;"><h4>Contact Us</h4></a></li>
                 </ul>
             </div>
             <form action="#" class="d-flex">
@@ -57,9 +101,94 @@
             </form>
         </nav>
     </div>
-    <!-- CONTENT -->
-    <div>
 
+    <!-- CONTENT VIDEO-->
+    <div class="container-fluid">
+        <div class="card border-0">
+            <video src="media/dota.mp4" loop autoplay muted style="width: 98vw;"></video>
+            <div class="card-img-overlay">
+                <h3 class="card-title text-white">Cheaters Will Never Be Welcome in Dota</h3>
+                <a href="#">
+                    <div style="display: flex;">
+                        <p>READ MORE </p>
+                        &#8594
+                    </div>
+                </a> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <div class="col-4" style="margin-left: 0px;">
+                <div class="card">
+                    <img src="media/dota/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="media/dota/4.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="media/dota/7.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="card">
+                    <img src="media/dota/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="media/dota/5.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="media/dota/8.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4">
+                <div class="card">
+                    <img src="media/dota/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="media/dota/6.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="media/dota/9.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- FOOTER -->

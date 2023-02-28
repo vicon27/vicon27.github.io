@@ -19,6 +19,13 @@
         margin-top: 10px;
     }
 
+    .card .card-img-overlay .card-title {
+        display: none;
+    }
+
+    .card .card-img-overlay a {
+        display: none;
+    }
 }
 .navbar ul li a {
     background-color: #f0ece2;

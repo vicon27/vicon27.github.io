@@ -67,11 +67,11 @@
 
 .container .carousel .lol_button:hover {
     background-color: #c21356;
-    color: black;
+    color: white;
 }
 
 .container .carousel .valo_button {
-    transition: all .5s ease;
+    transition: all .1s ease;
     color: #f0ece2;
     border: 1px solid #f0ece2;
     font-family:'Montserrat', sans-serif;
@@ -89,6 +89,7 @@
     color: black;
     background-color: #f0ece2;
     border: 1px solid black;
+    transition: all .1s ease;
 } 
 
 .logo {

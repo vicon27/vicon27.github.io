@@ -6,12 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel = "icon" href = "/media/logo-text.png" type = "image/x-icon">
-    <link rel="stylesheet" href="league.css">
-    <title>League of Legends News</title>
+    <link rel = "icon" href = "/media/logo.png" type = "image/x-icon">
+    <title>Esports News</title>
 </head>
-<body class="bg-black">
-    <!-- HEADER NAVIGATION BAR -->
+<style>
+    @media screen and (max-width: 576px) {
+        .navbar-images .logo {
+            width: 40px;
+        }
+
+        .navbar-images .logo_line {
+            width: 5px;
+        }
+
+        .navbar-images .logo_text {
+            width: 70px;
+        }
+
+        .navbar .input-group {
+            display: none;
+        }
+
+        .text-top h1{
+            font-size: 20px;
+        }
+    }
+    .navbar ul li a {
+        background-color: #f0ece2;
+        padding: 10px;
+        font-family:'Montserrat', sans-serif;
+    }
+    .navbar ul li a:hover {
+        opacity: .7;
+        background-color: black;
+        color: #f0ece2;
+    }
+    .logo {
+        width: 100px;
+    }
+
+    .logo_line {
+        width: 10px;
+    }
+
+    .logo_text {
+        width: 150px;
+    }
+
+    .container-fluid .row .col-4 .card{
+        width: 300px;
+        height: 300px;
+        margin-bottom: 50px;
+        background-color: #f0ece2;
+    }
+    .container-fluid .row .col-4 .card img{
+        width: 300px;
+        height: 300px;
+    }
+    .text-top h1{
+        font-size: 50px;
+        font-weight: bold;
+        margin: 20px 0px 0px 0px;
+    }
+    .container-fluid .row .col-4 {
+        width: 400px;
+        margin-left: 50px;
+    }
+</style>
+<body style="background-color: #e3ded0;">
     <div class="container-fluid" style="background-color: #f0ece2;">
         <nav class="navbar navbar-expand-sm navbar-expand-md navbar-light sticky-top">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content" aria-controls="" type="button"><span class="navbar-toggler-icon"></span></button>
@@ -25,14 +87,14 @@
                 <ul class="navbar-nav">
                     <div class="dropdown">
                         <button type="button" id="aboutus" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="font-size: 24px; padding-top: 4px; font-weight: 500;">Games</button>
-                        <ul class="dropdown-menu w" aria-labelledby="games" style="padding: 0px; border-radius: 5px;">
+                        <ul class="dropdown-menu w" aria-labelledby="games" style="padding: 0px;">
                             <li><a href="dota.html" class="dropdown-item">Dota 2</a></li>
                             <li><a href="#" class="dropdown-item">League of Legends</a></li>
                             <li><a href="#" class="dropdown-item">Valorant</a></li>
                         </ul>
                     </div>
-                    <li><a href="support.html" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px;"><h4>Support</h4></a></li>
-                    <li><a href="community.html" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px;"><h4>Community</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px; background-color: black; color: #f0ece2;"><h4>Support</h4></a></li>
+                    <li><a href="#" class="nav-item nav-link" style="margin: 2px 0px 0px 2px; border-radius: 10px; padding-bottom: 5px;"><h4>Community</h4></a></li>
                 </ul>
             </div>
             <form action="#" class="d-flex">
@@ -41,79 +103,65 @@
                     <button type="button" class="btn btn-secondary"><i class="bi bi-search"></i></button>
                   </div>      
             </form>
-        </nav>
+        </nav> 
     </div>
 
-    <!-- CONTENT VIDEO-->
-    <div class="container-fluid">
-        <div class="card border-0">
-            <video src="media/lol.mp4" loop autoplay muted style="width: 98vw;"></video>
-            <div class="card-img-overlay">
-                <h3 class="card-title text-white">Teamfight Tactics patch 13.4 notes</h3>
-                <a href="">
-                    <div style="display: flex;">
-                        <p>READ MORE </p>
-                        &#8594
-                    </div>
-                </a> 
-            </div>
+    <div class="container-fluid" >
+        <div class="text-top text-center">
+            <h1>WELCOME TO ESPORTS NEWS.</h1>
+            <h1>HOW CAN WE HELP?</h1>
         </div>
-    </div>
 
-    <!-- CONTENT CARD -->
-    <div class="container-fluid">
-        <div class="row d-lg-flex justify-content-center">
+        <div class="row text-center d-flex justify-content-center">
             <div class="col-4">
                 <div class="card">
-                    <a href="league_news_1.html"><img src="media/lol/1.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="media/support/dota.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">DOTA 2</p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <a href="league_news_1.html"><img src="media/lol/4.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="media/support/fortnite.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">FORTNITE</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-4">
                 <div class="card">
-                    <a href="league_news_1.html"><img src="media/lol/2.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="media/support/league.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">LEAGUE OF LEGENDS</p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <a href="league_news_1.html"><img src="media/lol/5.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="media/support/csgo.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">COUNTER STRIKE GO</p>
                     </div>
                 </div>
             </div>
-            
             <div class="col-4">
                 <div class="card">
-                    <a href="league_news_1.html"><img src="media/lol/3.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="media/support/valorant.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">VALORANT</p>
                     </div>
                 </div>
 
                 <div class="card">
-                    <a href="league_news_1.html"><img src="media/lol/6.jpg" class="card-img-top" alt="..."></a>
+                    <a href="#"><img src="media/support/ml.jpg" class="card-img-top" alt="..."></a>
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">MOBILE LEGENDS</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer class="container-fluid text-center" style="background-color: #f0ece2;">
         <img src="media/dota logo.png" alt="" width="100px" style="margin-top: 10px;">
         <img src="media/lol logo.png" alt="" width="100px">
